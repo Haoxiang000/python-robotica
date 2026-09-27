@@ -6,37 +6,37 @@
 
 ## Contexto
 
-`"3"` y `3` no son lo mismo: el primero es texto, el segundo es un número. Sumarlos peta. Ese error es el más habitual del curso y también el más fácil de arreglar.
+Cuando un sensor envía un número, puede llegar como texto: `"45"` no es lo mismo que `45`. Python conserva el tipo del valor, así que hay que convertirlo de forma explícita cuando necesitemos un número.
 
 ## Objetivo
 
-Reproducir un error de tipos, entenderlo y arreglarlo con conversiones.
+Distinguir un valor de texto de un valor numérico y convertirlos con `int()`, `float()` y `str()`.
 
 ## Lo que debes hacer
 
 1. Crea `solucion/conversiones.py`.
-2. Escribe estas cuatro líneas **tal cual** y ejecuta el programa:
-   ```python
-   print("Resultado:", "3" + 3)
-   ```
-   Guarda una captura o copia el error que aparece.
-3. Arregla el programa con conversiones **explícitas** (`int()`, `float()`, `str()`) para que imprita `Resultado: 6`.
-4. Haz lo mismo con la división: `"10" / 2` primero falla, después funciona con el tipo correcto.
-5. Demuestra también una conversión **implícita**: explica con un comentario por qué `1 + 2.0` funciona sin escribir ningún `float()`.
+2. Declara `texto_entero = "3"` y muéstralo con su tipo usando `type()`.
+3. Declara también `texto_decimal = "3.5"` y `numero = 42`. Convierte los valores explícitamente:
+   - `texto_entero` con `int()`;
+   - `texto_decimal` con `float()`;
+   - `numero` con `str()`.
+4. Muestra el valor y el tipo de cada valor convertido.
+5. Ejecuta el programa y guarda la salida en `solucion/conversiones-salida.txt`.
 
 ## Entregable
 
-- `solucion/conversiones.py` con las cuatro versiones (la que falla, la que funciona y las dos conversiones explícitas).
-- En el mensaje del commit, pega el error original y explica en dos líneas qué lo causaba.
+- `solucion/conversiones.py`.
+- `solucion/conversiones-salida.txt` con la salida de la consola.
 
 ## Criterios de evaluación
 
 | Criterio | Peso |
 |---|---|
-| Se reproduce el error y se documenta | 20 % |
-| Las conversiones explícitas funcionan | 40 % |
-| Se demuestra y explica la conversión implícita | 30 % |
-| Comentarios claros | 10 % |
+| Se distingue el texto del número con `type()` | 25 % |
+| `int()` convierte correctamente el texto entero | 25 % |
+| `float()` y `str()` convierten correctamente los valores | 30 % |
+| La salida está guardada en `conversiones-salida.txt` | 20 % |
 
 ## Pista de cara al futuro
-Este mismo error aparecerá el día que el robot pida datos por consola: todo lo que entra por `input()` es texto. Entrar un número por teclado y sumarlo sin convertir es el `TypeError` más caro del curso.
+
+`type()` te dice qué tipo tiene un valor. Usa esa misma función después de cada conversión para comprobar que el resultado es el que esperabas.
