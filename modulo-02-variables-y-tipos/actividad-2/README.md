@@ -6,11 +6,11 @@
 
 ## Contexto
 
-Todo lo que un robot sabe de sí mismo (su nombre, cuántas ruedas tiene, cuánto pesa la batería, si está encendido) acaba guardado en variables. Antes de poder tomar decisiones necesita poder nombrar esas cosas.
+Todo lo que un robot sabe de sí mismo (su nombre, cuántas ruedas tiene, cuánto pesa la batería, si está encendido) acaba guardado en variables. Darle nombre a cada dato es el primer paso para trabajar con él.
 
 ## Objetivo
 
-Crear las variables que describen un robot e imprimirlas con su tipo.
+Crear variables de distintos tipos y comprobar su valor y su tipo.
 
 ## Lo que debes hacer
 
@@ -20,9 +20,8 @@ Crear las variables que describen un robot e imprimirlas con su tipo.
    - `diametro_rueda` (decimal): el diámetro en centímetros.
    - `bateria` (entero): los minutos de autonomía que le quedan.
    - `encendido` (booleano): si está encendido o no.
-2. Muestra el valor de cada variable **en su propia línea**.
-3. Muestra en la misma línea el nombre de cada variable, su valor y su tipo. Usa `type()` para obtener el tipo. Por ejemplo, si `nombre = "Titán"`, la salida puede parecerse a `nombre: Titán (str)`.
-4. Ejecuta el programa, comprueba que los 5 tipos son los que esperabas y guarda la salida en `solucion/ficha-salida.txt`.
+2. Muestra cada variable en una sola línea con su nombre, su valor y su tipo. Usa `type()` para obtener el tipo. Por ejemplo, si `nombre = "Titán"`, la línea puede parecerse a `nombre: Titán (str)`.
+3. Ejecuta el programa, comprueba que cada variable tiene el tipo esperado y guarda la salida en `solucion/ficha-salida.txt`.
 
 ## Entregable
 
@@ -34,10 +33,10 @@ Crear las variables que describen un robot e imprimirlas con su tipo.
 | Criterio | Peso |
 |---|---|
 | Las 5 variables existen con el tipo correcto | 40 % |
-| Se muestra valor y tipo de cada una | 25 % |
+| Se muestra el nombre, el valor y el tipo de cada variable | 25 % |
 | Nombres de variables claros y sin acentos ni espacios | 10 % |
 | La salida está guardada en `ficha-salida.txt` | 25 % |
 
 ## Pista de cara al futuro
 
-Estas variables las usarán todas: cuando el robot tenga que decidir si avanza, comparará la batería. Fíjate en cuáles son números y cuáles son texto.
+Estas variables describen el robot. Fíjate en cuál es texto, cuál es número y cuál es booleano: cada tipo sirve para una cosa distinta.
