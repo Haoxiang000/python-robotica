@@ -6,35 +6,38 @@
 
 ## Contexto
 
-Con variables, constantes y conversiones ya se puede describir un robot entero. Esta actividad es la primera donde todo lo aprendido tiene que funcionar junto.
+Con variables, constantes y conversiones ya se puede describir un robot entero. Esta actividad combina lo aprendido hasta ahora, sin introducir condiciones ni fórmulas.
 
 ## Objetivo
 
-Programa un resumen del robot con los cinco tipos de datos trabajando a la vez.
+Combinar los cuatro tipos de datos y una constante en una ficha sencilla.
 
 ## Lo que debes hacer
 
 1. Crea `solucion/perfil.py`.
-2. Declara como mínimo estas variables, cada una con su tipo:
-   - `nombre` (str), `version` (str), `anio` (int), `altura_cm` (float), `peso_kg` (float), `autonomia_h` (float), `autonomo` (bool).
-3. Crea la constante `VERSION_ESPERADA = "v1.0"` y comprueba con un `if` si la versión de tu robot es la esperada (esto es un adelanto del módulo de condiciones).
-4. Muestra una ficha con una línea por variable, alineada, incluyendo el tipo.
-5. Calcula la densidad del robot (`peso / (altura * ancho * fondo)`, invéntate las medidas que falten) y muéstrala con dos decimales.
+2. Declara al menos estas variables, cada una con su tipo:
+   - `nombre` (str).
+   - `anio` (int).
+   - `altura_cm` (float).
+   - `autonomo` (bool).
+3. Declara la constante `VERSION_ESPERADA = "v1.0"` en MAYÚSCULAS.
+4. Imprime una línea por variable con su nombre, su valor y su tipo. Usa `print()` y `type()`; no hace falta alinear las líneas.
+5. Ejecuta el programa y guarda la salida en `solucion/perfil-salida.txt`.
 
 ## Entregable
 
 - `solucion/perfil.py`.
-- La salida de la consola con la ficha completa.
+- `solucion/perfil-salida.txt` con la salida de la consola.
 
 ## Criterios de evaluación
 
 | Criterio | Peso |
 |---|---|
-| Todas las variables con el tipo correcto | 30 % |
-| La comparación de versión con `if` funciona | 20 % |
-| La ficha está alineada y con el tipo visible | 20 % |
-| El cálculo de densidad es correcto | 20 % |
-| Comentarios y nombres claros | 10 % |
+| Están presentes los cuatro tipos de datos | 40 % |
+| La constante está declarada en MAYÚSCULAS y se muestra | 20 % |
+| Se muestra el nombre, el valor y el tipo de cada variable | 20 % |
+| La salida está guardada en `perfil-salida.txt` | 20 % |
 
 ## Pista de cara al futuro
-Este `if` es el primero de tu vida. En el módulo de condiciones verás cómo una decisión envuelve un bloque entero de código y qué pasa cuando el robot tiene que elegir entre dos rutas.
+
+El valor y el tipo son cosas distintas: `80` es un valor entero y `int` es su tipo. Mostrar los dos te ayuda a comprobar que has declarado la variable como querías.
