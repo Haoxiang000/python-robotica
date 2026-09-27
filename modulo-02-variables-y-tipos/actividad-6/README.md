@@ -6,38 +6,36 @@
 
 ## Contexto
 
-Antes de dar autonomía a un motor hay que hacer cuentas: cuánta energía consume, cuánto dura la batería, cuántas vueltas aguanta. Todo eso son operaciones con números y unidades.
+Un sensor puede enviar la distancia como texto, por ejemplo `"45"`. Para trabajar con ella como número hay que convertirla. Además, las constantes permiten nombrar los datos fijos del robot.
 
 ## Objetivo
 
-Combinar constantes, variables de distintos tipos y conversiones en un cálculo útil.
+Combinar constantes, variables de distintos tipos y una conversión explícita, sin hacer cálculos.
 
 ## Lo que debes hacer
 
-1. Crea `solucion/autonomia.py` con estos datos:
-   - `CAPACIDAD_BATERIA = 2200` (mAh, constante)
-   - `CONSUMO_MOTOR = 350` (mA)
-   - `distancia_bateria = 45` (km que recorre con la carga completa, texto: `"45"`, sí, viene de un sensor)
-2. Calcula e imprime:
-   - la autonomía en horas (capacidad / consumo);
-   - cuántos kilómetros da el robot con la batería al `50 %`;
-   - cuántas vueltas de rueda da en un kilómetro (usa `PI`, un diámetro de rueda de 8 cm y la constante `PASOS_POR_VUELTA = 1080`).
-3. Convierte explícitamente `distancia_bateria` a número **antes** de operar con ella.
-4. Todos los resultados se muestran con su unidad (`h`, `km`, `vueltas`).
+1. Crea `solucion/sensor.py`.
+2. Declara estas constantes en MAYÚSCULAS:
+   - `NOMBRE_SENSOR = "distancia"`.
+   - `UNIDAD = "cm"`.
+3. Declara `distancia_texto = "45"` y `bateria = 80`. Muestra el valor y el tipo de cada una.
+4. Convierte explícitamente `distancia_texto` con `float()` y guarda el resultado en `distancia`. Muestra también el valor y el tipo de `distancia`.
+5. Muestra todos los valores y tipos y guarda la salida en `solucion/sensor-salida.txt`.
 
 ## Entregable
 
-- `solucion/autonomia.py`.
-- La salida de la consola con los tres resultados y sus unidades.
+- `solucion/sensor.py`.
+- `solucion/sensor-salida.txt` con la salida de la consola.
 
 ## Criterios de evaluación
 
 | Criterio | Peso |
 |---|---|
-| Los tres cálculos son correctos | 40 % |
-| La conversión de `distancia_bateria` es explícita y está antes de usarla | 20 % |
-| Se usan las constantes, no números sueltos en las fórmulas | 20 % |
-| Cada resultado va acompañado de su unidad | 20 % |
+| Las dos constantes están declaradas en MAYÚSCULAS | 25 % |
+| Las variables tienen el tipo correcto | 25 % |
+| La conversión con `float()` es explícita y se muestra su resultado | 30 % |
+| La salida está guardada en `sensor-salida.txt` | 20 % |
 
 ## Pista de cara al futuro
-Estas cuentas son la base de un proyecto real: elegir batería y motor según la autonomía que quieres. Cuando llegue el bloque de electrónicaDIMENSIONARás el robot con estos mismos números.
+
+Una constante puede contener texto o un número. Lo que la identifica como constante es su nombre en MAYÚSCULAS, no su tipo.
