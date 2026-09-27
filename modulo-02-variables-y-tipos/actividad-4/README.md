@@ -10,7 +10,7 @@ El tipo `bool` solo tiene dos valores: `True` y `False`. Son las respuestas a la
 
 ## Objetivo
 
-Trabajar con booleanos y entender cómo se imprimen.
+Crear y mostrar valores booleanos en Python, sabiendo qué significa `True` y `False`.
 
 ## Lo que debes hacer
 
@@ -19,24 +19,22 @@ Trabajar con booleanos y entender cómo se imprimen.
    - `hay_pared` (respuesta inventada por ti)
    - `cargando`
    - `modo_autonomo`
-2. Imprime cada booleano con su valor.
-3. Imprime además, para cada uno, una frase con su **significado** usando condiciones simples: por ejemplo `bateria_ok = True → "puede seguir"`, y `False → "debe parar"`.
-4. Termina mostrando cuántos booleanos son `True` (sumándolos con `True`/`False`, que en Python valen 1/0).
+2. Imprime cada booleano con su nombre y su valor, por ejemplo `bateria_ok: True`.
+3. Guarda la salida del programa en `solucion/booleanos-salida.txt`.
 
 ## Entregable
 
 - `solucion/booleanos.py`.
-- La salida de la consola.
+- `solucion/booleanos-salida.txt` con la salida de la consola.
 
 ## Criterios de evaluación
 
 | Criterio | Peso |
 |---|---|
-| Los cuatro booleanos están bien nombrados y bernilai | 30 % |
-| Cada booleano se traduce a una frase con significado | 40 % |
-| La cuenta de los `True` es correcta | 20 % |
-| Comentario explicando por qué los booleanos son 1/0 | 10 % |
+| Los cuatro booleanos están bien nombrados y tienen un valor coherente | 40 % |
+| Cada booleano se imprime con su nombre y su valor | 40 % |
+| La salida está guardada en `booleanos-salida.txt` | 20 % |
 
 ## Pista de cara al futuro
 
-Estas preguntas son la entrada del módulo de condiciones. Lo que aquí haces con cuatro `if` escritos a mano, pronto lo harás con un `if` que decida la orden del robot.
+Un booleano solo puede ser `True` o `False`. Fíjate en que el nombre del booleano explica qué pregunta estás respondiendo.
