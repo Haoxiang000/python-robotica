@@ -6,35 +6,37 @@
 
 ## Contexto
 
-Nadie escribe código bien a la primera. La diferencia entre un programador y el resto es que sabe encontrar por qué algo no hace lo que quiere.
+Nadie escribe código bien a la primera. Cuando un programa falla, el mensaje de error es una pista: indica qué esperaba Python y qué encontró.
 
 ## Objetivo
 
-Romper un programa a propósito, encontrar el fallo con herramientas y documentar el proceso.
+Practicar la búsqueda y corrección de errores simples leyendo el mensaje que muestra Python.
 
 ## Lo que debes hacer
 
-1. Crea `solucion/depuracion.py` con un programa que **no funcione**: invéntate tres errores (por ejemplo, usar una variable antes de crearla, sumar texto con número, y equivocarte al escribir el nombre de una variable).
-2. Ejecuta el programa y **copia los tres errores** que aparecen en un fichero `errores.txt` dentro de `solucion/`.
-3. Arregla el programa usando el depurador de tu editor (puntos de interrupción y inspección de variables) o `print()` de control.
+1. Crea `solucion/depuracion.py` con un programa que deba mostrar el nombre del robot, una distancia recibida como texto y si el robot está encendido.
+2. Introduce un error y ejecuta el programa. Copia el mensaje real en `solucion/errores.txt`, corrige el error y repite el proceso con otros dos errores, uno cada vez.
+3. Después de cada corrección, vuelve a ejecutar el programa y usa `print()` para comprobar que funciona. No hace falta usar el depurador del editor.
 4. Documenta cada fallo en un `README.md` dentro de `solucion/` con tres líneas: **qué esperaba**, **qué pasó** y **por qué**.
-5. El programa final tiene que hacer lo que se suponía al principio y tener al menos tres comentarios explicando las decisiones.
+5. Deja el programa final funcionando, con al menos tres comentarios que expliquen las correcciones, y guarda su salida en `solucion/depuracion-salida.txt`.
 
 ## Entregable
 
-- `solucion/depuracion.py` (funcionando).
-- `solucion/errores.txt` con los errores originales.
+- `solucion/depuracion.py` funcionando.
+- `solucion/errores.txt` con los tres mensajes originales.
 - `solucion/README.md` con la documentación de los tres fallos.
+- `solucion/depuracion-salida.txt` con la salida final.
 - Al menos tres commits: uno por cada error corregido.
 
 ## Criterios de evaluación
 
 | Criterio | Peso |
 |---|---|
-| Los tres fallos están documentados con el mensaje real del error | 30 % |
-| El programa final funciona | 30 % |
-| El proceso se ve en el historial de commits | 20 % |
-| Comentarios y documentación | 20 % |
+| El programa final muestra los datos esperados | 30 % |
+| Los tres fallos están documentados con el mensaje real | 30 % |
+| Cada corrección se comprueba ejecutando y usando `print()` | 20 % |
+| El proceso se ve en los commits y en la documentación | 20 % |
 
 ## Pista de cara al futuro
-Cuando programéis el robot, los sensores fallarán, los cables se soltarán y el código tendrá que ser robusto. Depurar bien es una habilidad de primer orden, no un extra.
+
+Cuando el robot tenga sensores, los errores serán la norma y no la excepción. Leer el mensaje, cambiar una cosa y volver a probar es el ciclo de depuración.
