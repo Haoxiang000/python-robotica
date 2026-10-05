@@ -1,0 +1,5 @@
+Nombre Robot <class 'str'>
+Ruedas 16 <class 'int'>
+Diametro_Ruedas 3.14 <class 'float'>
+Bateria 100 <class 'int'>
+Encendido True <class 'bool'>
