@@ -1,0 +1,3 @@
+texto_entero 3 <class 'int'>
+texto_decimal 3.5 <class 'float'>
+numero 42 <class 'str'>
