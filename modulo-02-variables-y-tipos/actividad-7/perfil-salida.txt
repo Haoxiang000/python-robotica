@@ -1,0 +1,5 @@
+VERSION_ESPERADA v1.0 <class 'str'>
+nombre Android <class 'str'>
+anio 16 <class 'int'>
+altuta_cm 163.5 <class 'float'>
+autonomo False <class 'bool'>
