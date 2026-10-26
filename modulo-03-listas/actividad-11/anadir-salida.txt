@@ -1,0 +1,4 @@
+['ultrasonidos', 'infrarrajos', 'luz']
+3
+['ultrasonidos', 'infrarrajos', 'luz', 'presencia']
+4
