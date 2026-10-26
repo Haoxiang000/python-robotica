@@ -1,0 +1,4 @@
+4
+el primero adelante
+el segundo izquierda
+el último parar
