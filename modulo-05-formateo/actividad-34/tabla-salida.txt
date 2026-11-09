@@ -1,0 +1,3 @@
+ultrasonidos 40.0cm ########
+infrarrojos 12.0cm ##
+Luz 7.0cm #
